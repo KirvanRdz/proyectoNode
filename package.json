@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "transpile": "npm install --production=false && npm install && babel src --out-dir dist",
+    "transpile": "npm install && babel src --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run transpile && node ./dist/main.js",
     "dev": "nodemon --exec babel-node ./src/main.js"
@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.18.6",
     "@faker-js/faker": "^7.1.0",
     "bcrypt": "^5.0.1",
     "child_process": "^1.0.2",
