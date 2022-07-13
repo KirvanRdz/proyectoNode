@@ -13,12 +13,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/runtime": "^7.18.3",
-    "@babel/cli": "^7.17.10",
     "@babel/core": "^7.18.2",
     "@babel/node": "^7.17.10",
     "@babel/plugin-transform-runtime": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
+    "@babel/runtime": "^7.18.3",
     "@faker-js/faker": "^7.1.0",
     "bcrypt": "^5.0.1",
     "child_process": "^1.0.2",
@@ -48,7 +47,7 @@
     "winston": "^3.8.1"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.10",
+    "@babel/cli": "^7.18.6",
     "@babel/core": "^7.18.2",
     "@babel/node": "^7.17.10",
     "@babel/plugin-transform-runtime": "^7.18.2",
