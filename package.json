@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "transpile": "npm install && babel src --out-dir dist",
+    "transpile": "npm install -g babel-cli && npm install && babel src --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run transpile && node ./dist/main.js",
     "dev": "nodemon --exec babel-node ./src/main.js"
