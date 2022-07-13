@@ -54,8 +54,8 @@ var init = /*#__PURE__*/function () {
               /* WORKERS */
               io = (0, _socket.initWsServer)(_server["default"]);
 
-              _server["default"].listen(args.port, function () {
-                return console.log("Servidor express escuchando en el puerto ".concat(args.port, " - PID WORKER ").concat(process.pid));
+              _server["default"].listen(PORT, function () {
+                return console.log("Servidor express escuchando en el puerto ".concat(PORT, " - PID WORKER ").concat(process.pid));
               });
             }
 
@@ -89,11 +89,11 @@ var optionalArgsObject = {
 };
 var args = (0, _minimist["default"])(process.argv, optionalArgsObject);
 var modo = args.modo;
-var PORT = args.port; //Obtengo el numero de nucleos disponibles en mi PC
+var PORT = process.env.PORT || 8081; //Obtengo el numero de nucleos disponibles en mi PC
 
 exports.PORT = PORT;
 
 var numCPUs = _os["default"].cpus().length;
 
-console.log(args);
+console.log(process.env.PORT);
 init();
