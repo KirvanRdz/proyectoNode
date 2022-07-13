@@ -54,7 +54,7 @@ const init = async () => {
 
   const args = minimist(process.argv,optionalArgsObject);
   const modo= args.modo
-  export const PORT=process.env.PORT || 8080;
+  export const PORT=process.env.PORT || 8081;
   //Obtengo el numero de nucleos disponibles en mi PC
   const numCPUs = os.cpus().length;
   console.log(args);
